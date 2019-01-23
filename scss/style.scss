@@ -1,0 +1,319 @@
+@import '_mixsins.scss';
+@import url('normalize.css');
+
+
+$ff: Montserrat;
+$fc1: #fde428;
+$fc2: #002e5b;
+$fcText1: #ffffff;
+$fcText2: #4e4e4e;
+$fcText3: #666666;
+
+/* Общие правила*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  @include clearfix;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.56;
+  font-family: $ff;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/*----------------------------------------------------*/
+
+/*Шапка*/
+
+.row__header {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.page__header {
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  z-index: 100;
+  box-sizing: border-box;
+  padding-top: 2.1rem;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__nav {
+  float: right;
+}
+
+//Логотип
+.logo__title {
+  a {
+    color: $fc1;
+    font-family: $ff;
+    font-size: 2.813rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.logo__slogan {
+  margin-top: -1.25rem;
+  a {
+    font-family: $ff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    color: $fcText1;
+  }
+}
+
+//Меню
+.nav__item {
+  float: left;
+  list-style: none;
+  margin-left: 2.625rem;
+}
+
+.nav__link {
+  transition: all ease 0.7s;
+  text-decoration: none;
+  color: $fcText1;
+  font-family: $ff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 3.64;
+  text-transform: uppercase;
+  letter-spacing: 0.035rem;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 1.5px solid $fc1;
+  }
+}
+
+.nav__link.active {
+  font-weight: 700;
+  border-bottom: 1.5px solid $fc1;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__item:last-child {
+  margin-left: 2rem;
+  line-height: 3.057;
+}
+
+//Выпадающий список выбора языка
+.nav__dropDown {
+  position: relative;
+  background-image: url(../img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 100% 47%;
+  width: 3.3rem;
+}
+
+.nav__list-dropDown {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+
+.nav__dropDown:hover {
+  cursor: pointer;
+  ;
+}
+
+.nav__dropDown>img {
+  transform: translateY(22%); //сдвигаем флаг вниз для центрирования
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(22%);
+  -ms-transform: translateY(22%);
+  -o-transform: translateY(22%);
+  -webkit-transform: translateY(22%);
+}
+
+//Слайдер
+.slider__item {
+  background-position: center center;
+  height: 56rem;
+  padding-top: 2.1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.border-slider__base {
+  color: $fcText1;
+  font-family: $ff;
+  font-size: 3.188rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: right;
+  position: relative;
+  left: -76%;
+  top: -24%;
+
+  span {
+    position: relative;
+    left: -4.5%;
+  }
+}
+
+.border-slider__base--slide-2,
+.border-slider__base--slide-3 {
+  span {
+    position: relative;
+    left: 0;
+  }
+}
+
+.border-slider__desc {
+  font-family: $ff;
+  font-size: 1.313rem;
+  font-weight: 700;
+  line-height: 2.43;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: right;
+  position: relative;
+  top: -12%;
+  left: -77%;
+  z-index: 100;
+
+  a {
+    color: $fc1;
+  }
+}
+
+.border-slaider {
+  border: solid 0.625rem $fc1;
+  position: absolute;
+  width: 18.688rem;
+  height: 23.625rem;
+}
+
+.border-slaider:before {
+  content: '';
+  height: 9.625rem;
+  width: 0px;
+  display: block;
+  border-left: solid 0.625rem #001c37;
+  position: relative;
+  left: -0.625rem;
+  top: 19.300%;
+}
+
+.border-slaider--slide-2:before {
+  border-left: solid 0.625rem #343f6a;
+}
+
+.border-slaider--slide-3:before {
+  border-left: solid 0.625rem #394b77;
+}
+
+.border-slaider:after {
+  content: '';
+  height: 2.563rem;
+  width: 0px;
+  display: block;
+  border-left: solid 0.625rem #001c37;
+  position: relative;
+  left: -0.625rem;
+  top: -24%;
+}
+
+.border-slaider--slide-2:after {
+  border-left: solid 0.625rem #30325d;
+}
+
+.border-slaider--slide-3:after {
+  border-left: solid 0.625rem #344974;
+}
+
+.slider__border-slider {
+  position: absolute;
+  right: 23.5rem;
+  top: 19.3125rem;
+}
+
+//Кнопки навигации
+.owl-next>span,
+.owl-prev>span {
+  color: $fc1;
+  font-family: "Myriad Pro";
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.owl-prev span:before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 3px;
+  position: relative;
+  top: 0.4rem;
+  display: inline-block;
+  background-image: url(../img/long-arrow-pointing-to-left.png);
+  background-repeat: no-repeat;
+}
+
+.owl-next span:after {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 3px;
+  position: relative;
+  top: 0.4rem;
+  display: inline-block;
+  background-image: url(../img/long-arrow-pointing-to-the-right.png);
+  background-repeat: no-repeat;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: inline-block;
+}
+
+.slider {
+  position: relative;
+}
+
+/***************************************************************************/
