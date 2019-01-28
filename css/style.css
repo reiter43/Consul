@@ -65,6 +65,7 @@ p {
   float: right;
 }
 
+/*Логотип*/
 .logo__title a {
   color: #fde428;
   font-family: Montserrat;
@@ -87,6 +88,7 @@ p {
   color: #ffffff;
 }
 
+/*Меню*/
 .nav__item {
   float: left;
   list-style: none;
@@ -125,6 +127,7 @@ p {
   line-height: 3.057;
 }
 
+/*Выпадающий список выбора языка*/
 .nav__dropDown {
   position: relative;
   background-image: url(../img/down-arrow.png);
@@ -152,12 +155,13 @@ p {
   -webkit-transform: translateY(22%);
 }
 
+/*Слайдер*/
 .slider__item {
-  background-position: center center;
   height: 56rem;
   padding-top: 2.1rem;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .border-slider__base {
@@ -252,6 +256,7 @@ p {
   top: 19.3125rem;
 }
 
+/*Кнопки навигации*/
 .owl-next > span,
 .owl-prev > span {
   color: #fde428;
@@ -303,4 +308,511 @@ p {
 }
 
 /***************************************************************************/
+/*Основной контент***********************************/
+/*Секция стартап*/
+.row-startup-wrap {
+  position: relative;
+}
+
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row-startup__rectangle {
+  width: 16.875rem;
+  height: 32.75rem;
+  background-color: #fde428;
+  opacity: 0.98;
+  margin-right: 7.0625rem;
+}
+
+.title {
+  color: #002e5b;
+  font-family: Montserrat;
+  font-size: 1.938rem;
+  font-weight: 700;
+  line-height: 0.88;
+  text-transform: uppercase;
+  margin: 6.125rem 0 1.75rem 0;
+}
+
+.content-desc {
+  color: #666666;
+  font-family: "Segoe UI Emoji";
+  font-size: 1.313rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.content-text {
+  color: #333333;
+  font-family: "Segoe UI Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  margin-bottom: 2rem;
+}
+
+.content-link {
+  color: #002e5b;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.24;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid #002e5b;
+}
+
+.row-startup__img {
+  position: absolute;
+  right: 0;
+  top: 6.0625rem;
+  z-index: 100;
+}
+
+/*************************************************************/
+/*Секция с графиком*/
+.row-graph {
+  background-color: #f4f4f4;
+  padding: 6.4375rem 0;
+}
+
+/**************************************************************/
+/*Секция с кнопкой*/
+.row-contact {
+  background-color: #002e5b;
+  padding: 1.5rem 0;
+}
+
+.row-contact__text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 1.313rem;
+  font-weight: 400;
+  line-height: 2.43;
+}
+
+.row-contact__button {
+  width: 10.25rem;
+  height: 2.938rem;
+  border-radius: 0.188rem;
+  background-color: #fde428;
+  text-decoration: none;
+  text-align: center;
+  line-height: 2.9;
+  color: #002e5b;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.row-contact__button:active {
+  -webkit-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  opacity: 0.9;
+}
+
+.row-contact__button:hover {
+  opacity: 1;
+}
+
+/**********************************************************************/
+/*Секция популярные сервисы*/
+.row-pop__heading {
+  margin: 0px auto 0px auto;
+  width: 46%;
+  text-align: center;
+}
+
+.row-pop__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+  margin-bottom: 5.9375rem;
+}
+
+.row-pop__pic {
+  width: 100%;
+  height: 12.063rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.row-pop__content figure {
+  margin: 0;
+}
+
+.row-pop__item {
+  width: 31.8%;
+}
+
+.row-pop__pic-title {
+  color: #002e5b;
+  font-family: Montserrat;
+  font-size: 1.313rem;
+  font-weight: 700;
+  line-height: 2.29;
+  text-transform: uppercase;
+  margin-top: 1.2875rem;
+  margin-bottom: 0.6rem;
+}
+
+.row-pop__pic-desc {
+  color: #333333;
+  font-family: "Segoe UI Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+/***********************************************************/
+/*Секция с ночью*/
+.row-night {
+  background-image: url(../img/layers.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 8.9375rem 0;
+}
+
+.row-night__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row-night__item {
+  color: #ffffff;
+  text-align: center;
+}
+
+.row-night__item-text {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+}
+
+.row-night__item-desc {
+  font-family: "Segoe UI Emoji";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 3.43;
+  text-transform: uppercase;
+  letter-spacing: 0.175rem;
+}
+
+/*********************************************/
+/*Секция с видео*/
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6rem 0;
+  position: relative;
+}
+
+.video__restangle {
+  width: 16.875rem;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 7.125rem;
+  z-index: -1;
+  background-color: #fde428;
+  opacity: 0.98;
+}
+
+.video__poster {
+  position: relative;
+  width: 31.1875rem;
+}
+
+.video__poster img {
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  max-width: 100%;
+}
+
+.video__fon {
+  background-color: #002e5b;
+  max-width: 100%;
+  height: 100%;
+}
+
+.title--video {
+  margin-top: 0;
+}
+
+.video__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 6.813rem;
+  height: 6.813rem;
+  background-color: #eff3f6;
+  border-radius: 50%;
+  border: none;
+}
+
+.video__btn-icon {
+  width: 5.813rem;
+  height: 5.813rem;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.video__btn-icon:hover {
+  cursor: pointer;
+}
+
+/***********************************************/
+/*Секция цитаты*/
+.row-slogan {
+  background-image: url(../img/bg-slogan.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.row-slogan__text {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-bottom: 2.9rem;
+}
+
+.row-slogan__text::before {
+  content: url(../img/quotes.png);
+  line-height: 0.79;
+  display: block;
+  margin-bottom: 1.7rem;
+}
+
+.row-slogan__content {
+  text-align: center;
+  padding: 7.5rem 0;
+}
+
+.row-slogan__link {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 3.42;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.row-slogan__link:hover {
+  opacity: 0.5;
+}
+
+.row-slogan__link-wrap {
+  overflow: hidden;
+}
+
+.row-slogan__link-wrap span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.row-slogan__link-wrap:before, .row-slogan__link-wrap:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5%;
+  height: 2px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.row-slogan__link-wrap:before {
+  margin-left: -100%;
+  left: -0.2%;
+}
+
+.row-slogan__link-wrap:after {
+  margin-right: -100%;
+  right: -0.2%;
+}
+
+/**************************************************/
+/*Секция с картами*/
+.row-maps {
+  text-align: center;
+}
+
+.maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.maps__item {
+  width: 31.8%;
+  height: 14.9375rem;
+  -webkit-box-shadow: 0 -0.188rem 0.5rem rgba(0, 0, 0, 0.07);
+          box-shadow: 0 -0.188rem 0.5rem rgba(0, 0, 0, 0.07);
+}
+
+.maps-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 8.1em;
+}
+
+.maps-adress__item {
+  width: 31.8%;
+  padding-left: 2.31rem;
+  -webkit-box-shadow: 0 0.188rem 0.5rem rgba(0, 0, 0, 0.07);
+          box-shadow: 0 0.188rem 0.5rem rgba(0, 0, 0, 0.07);
+}
+
+.maps-adress__title {
+  color: #002e5b;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 0.86;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.maps-adress__list-item {
+  color: #002e5b;
+  font-family: "Segoe UI Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.maps-adress__list-item p {
+  display: inline-block;
+}
+
+.fa-li {
+  left: -2.64em;
+}
+
+.fa-li.fa-lg {
+  left: -2.25em;
+}
+
+/*******************************************/
+/*Подвал*/
+.row-footer {
+  background-color: #002e5b;
+}
+
+.row-footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.row-footer__content a {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.81;
+  text-decoration: none;
+}
+
+.row-footer__content a span {
+  color: #fde52c;
+}
+
+.row-footer__content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row-footer__content .social i {
+  color: #fbfbfb;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 3;
+  margin-left: 1rem;
+}
+
+.row-footer__content .social i:nth-child(1) {
+  margin-left: 0;
+}
+
+/**************************************************/
 /*# sourceMappingURL=style.css.map */

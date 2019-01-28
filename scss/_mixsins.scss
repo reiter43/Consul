@@ -1,10 +1,58 @@
-@mixin clearfix {
+@mixin clearfix { //очистка потока
   content: "";
 	display: table;
 	clear: both;
 }
 
-@mixin  color {
-  background-color:red;
-  
+@mixin bgpos { //расположение бэкграунда
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin coverpos{ //позционирование фона с наложением на картинку
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin verAl { //вертикальное выравнивание
+  margin: 0 auto;
+  display: block;
+ 	position: relative;
+	top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin title ($w, $h, $c) { //горизонтальные линии у заголовка
+  overflow: hidden;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: $w;
+    height: $h;
+    background-color: $c;
+    position: relative;
+  }
+
+  &:before {
+    margin-left: -100%;
+    left: -0.2%;
+  }
+
+  &:after {
+    margin-right: -100%;
+    right: -0.2%;
+  }
 }
