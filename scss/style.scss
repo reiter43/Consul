@@ -432,6 +432,7 @@ p {
 
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
 
@@ -558,7 +559,7 @@ p {
   &__fon {
     background-color: #002e5b;
     max-width: 100%;
-    height: 100%;
+    height: 20.375rem;
   }
 }
 
@@ -590,6 +591,24 @@ p {
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.video__close {
+  border: none;
+  background-color: $fc2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  color: $fc1;
+  font-size: 0.85rem;
+  opacity: 0.8;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
   }
 }
 
@@ -720,9 +739,9 @@ p {
   &__content {
     display: flex;
     justify-content: space-between;
-    padding:  1.5rem 0;
+    padding: 1.5rem 0;
 
-    a {
+    .copy {
       color: $fcText1;
       font-family: $ff;
       font-size: 1rem;
@@ -745,11 +764,152 @@ p {
         font-weight: 400;
         line-height: 3;
         margin-left: 1rem;
-        &:nth-child(1){
-          margin-left: 0;
-        }
       }
     }
   }
 }
+
 /**************************************************/
+
+/*Форма с сообщением*/
+.modal-login__wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal-login {
+  width: 35rem;
+  height: 20rem;
+  border: 3px solid $fc2;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+  padding: 10px;
+  background: #fff;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  position: relative;
+}
+
+.message__hide {
+  display: none;
+}
+
+.modal-login input {
+  margin-top: 1rem;
+  color: $fc2;
+  width: 18rem;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+#name,
+#email {
+  border: none;
+  border-bottom: 1px solid $fcText3;
+
+  &:focus {
+    border-bottom: 2px solid $fc2;
+  }
+}
+
+.message-form {
+  width: 100%;
+  height: 10rem;
+  border: 1px solid $fcText3;
+  resize: none;
+  color: $fc2;
+
+  &:focus {
+    border: 2px solid $fc2;
+    outline: none;
+  }
+}
+
+.modal-login label {
+  margin-top: 1.5rem;
+  color: $fcText2;
+  font-size: 0.7rem;
+}
+
+#btn-clear {
+  float: right;
+}
+
+#btn-clear,
+#btn-message {
+  background-color: lighten($fcText3, 40%);
+  border: 1px solid $fc2;
+  color: $fc2;
+}
+
+#btn-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.35rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid $fc2;
+  color: $fc2;
+  background-color: lighten($fcText3, 40%);
+  position: absolute;
+  top: -0.65rem;
+  right: -0.65rem;
+  text-align: center;
+}
+
+/******************************************/
+
+/*Всплывающие сообщения*/
+.chipp {
+  padding: 0.5rem 1.5rem;
+  margin: 1.5rem 0.5rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, .8);
+  color: $fc1;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.chips-field {
+  max-width: 25rem;
+  position: fixed;
+  right: 40%;
+  top: 10px;
+}

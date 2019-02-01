@@ -5,7 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Counsel</title>
+
+	<link rel="shortcut icon" href="img/network.ico" type="image/x-icon">
 
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -159,9 +161,9 @@
 					<p class="row-contact__text">
 						Looking for a First-Class Business Plan Consultant?
 					</p>
-					<a href="#" class="row-contact__button">
+					<button class="row-contact__button">
 						Contact Now
-					</a>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -264,7 +266,7 @@
 			<div class="container">
 				<div class="video ">
 					<div class="video__restangle"></div>
-					<div class="video__poster" data-youtube="TY8sOLASVK8">
+					<div class="video__poster">
 						<div class="video__fon">
 
 						</div>
@@ -413,25 +415,58 @@
 
 			</div>
 		</section>
+	</main>
 
-		<footer class="row-footer">
-			<div class="container">
-				<div class="row-footer__content">
-					<a href="#" class="copy">
-						<p>Copyright © <span>Consul</span></p>
-
-					</a>
-					<div class="social">
+	<footer class="row-footer">
+		<div class="container">
+			<div class="row-footer__content">
+				<a href="#" class="copy">
+					<p>Copyright © <span>Consul</span></p>
+				</a>
+				<div class="social">
+					<a href="#">
 						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#">
 						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
 						<i class="fa fa-google-plus"></i>
+					</a>
+					<a href="#">
 						<i class="fa fa-futbol-o"></i>
-					</div>
+					</a>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
-	</main>
+	<!-- Форма для сообщений -->
+	<div class="modal-login__wrap message__hide" id="sign-up">
+		<form class="modal-login" id="modal-message">
+			<div class="">
+				<input placeholder="Введите ваше имя" id="name" type="text" name="name" required>
+			</div>
+			<div class="">
+				<input placeholder="Введите ваш email" id="email" type="email" name="email" required>
+			</div>
+			<div class="">
+				<label for="message-form">Введите ваше сообщение</label>
+				<textarea class="message-form " name="text" required></textarea>
+			</div>
+			<div>
+				<button id="btn-message">
+					Отправить
+				</button>
+
+			</div>
+			<p id="btn-close">
+				<i class="fa fa-times"></i>
+			</p>
+
+		</form>
+	</div>
+
 
 
 
@@ -440,7 +475,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="libs/owlcarusel/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/video.js"></script>
 	<script src="js/map.js"></script>
+	<script src="js/modal_message.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/chips.js"></script>
 
 </body>
 
