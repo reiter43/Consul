@@ -167,8 +167,23 @@ p {
 /*Слайдер*/
 .slider__item {
   height: 56rem;
-  padding-top: 2.1rem;
   @include bgpos;
+}
+
+.container-slider {
+  position: relative;
+  height: 56rem;
+
+  svg {
+    position: absolute;
+    right: 10px;
+    top: 17.2rem;
+  }
+}
+
+.border__line {
+  z-index: 10000;
+  height: 30rem;
 }
 
 .border-slider__base {
@@ -178,22 +193,9 @@ p {
   font-weight: 700;
   line-height: 1;
   text-align: right;
-  position: relative;
-  left: -76%;
-  top: -24%;
-
-  span {
-    position: relative;
-    left: -4.5%;
-  }
-}
-
-.border-slider__base--slide-2,
-.border-slider__base--slide-3 {
-  span {
-    position: relative;
-    left: 0;
-  }
+  position: absolute;
+  right: 14.3rem;
+  top: 23.4rem;
 }
 
 .border-slider__desc {
@@ -202,67 +204,17 @@ p {
   font-weight: 700;
   line-height: 2.43;
   text-transform: uppercase;
-  text-decoration: underline;
-  text-align: right;
-  position: relative;
-  top: -12%;
-  left: -77%;
-  z-index: 100;
+  position: absolute;
+  top: 36.5rem;
+  right: 15rem;
 
   a {
     color: $fc1;
+    text-decoration: none;
+      &:hover {transition: all ease 2s;
+      text-decoration: underline;
+    }
   }
-}
-
-.border-slaider {
-  border: solid 0.625rem $fc1;
-  position: absolute;
-  width: 18.688rem;
-  height: 23.625rem;
-}
-
-.border-slaider:before {
-  content: '';
-  height: 9.625rem;
-  width: 0px;
-  display: block;
-  border-left: solid 0.625rem #001c37;
-  position: relative;
-  left: -0.625rem;
-  top: 19.300%;
-}
-
-.border-slaider--slide-2:before {
-  border-left: solid 0.625rem #343f6a;
-}
-
-.border-slaider--slide-3:before {
-  border-left: solid 0.625rem #394b77;
-}
-
-.border-slaider:after {
-  content: '';
-  height: 2.563rem;
-  width: 0px;
-  display: block;
-  border-left: solid 0.625rem #001c37;
-  position: relative;
-  left: -0.625rem;
-  top: -24%;
-}
-
-.border-slaider--slide-2:after {
-  border-left: solid 0.625rem #30325d;
-}
-
-.border-slaider--slide-3:after {
-  border-left: solid 0.625rem #344974;
-}
-
-.slider__border-slider {
-  position: absolute;
-  right: 23.5rem;
-  top: 19.3125rem;
 }
 
 /*Кнопки навигации*/
@@ -705,8 +657,6 @@ p {
 }
 
 .maps-adress__list {
-
-  // margin-left: 1.5rem;
   &-item {
     color: $fc2;
     font-family: "Segoe UI Emoji";
@@ -715,6 +665,15 @@ p {
     line-height: 1;
     text-align: left;
     margin-bottom: 1rem;
+
+    a {
+      text-decoration: none;
+      color: $fc2;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
 
     p {
       display: inline-block;
@@ -779,21 +738,8 @@ p {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, .5);
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -807,15 +753,6 @@ p {
   box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
   padding: 10px;
   background: #fff;
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -897,19 +834,19 @@ p {
 /******************************************/
 
 /*Всплывающие сообщения*/
-.chipp {
-  padding: 0.5rem 1.5rem;
-  margin: 1.5rem 0.5rem;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, .8);
-  color: $fc1;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
 .chips-field {
   max-width: 25rem;
   position: fixed;
   right: 40%;
   top: 10px;
+
+  .chipp {
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0.5rem;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, .8);
+    color: $fc1;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
 }

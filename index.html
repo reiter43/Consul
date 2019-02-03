@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Counsel</title>
+
+	<title>Counsul</title>
 
 	<link rel="shortcut icon" href="img/network.ico" type="image/x-icon">
 
@@ -17,9 +18,6 @@
 
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=f545564e-3292-449a-90b0-fd9356ae20cb&lang=ru_RU" type="text/javascript">
 	</script>
-
-
-
 </head>
 
 <body class="page">
@@ -47,10 +45,10 @@
 								<li class="nav__item">
 									<a href="#" class="nav__link nav__link--active">About </a>
 								</li>
-								<li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-								<li class="nav__item"><a href="#" class="nav__link"> Why We Best</a></li>
-								<li class="nav__item"><a href="#" class="nav__link">Testimonials</a></li>
-								<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+								<li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
+								<li class="nav__item"><a href="#best" class="nav__link"> Why We Best</a></li>
+								<li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
+								<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 								<li class="nav__item">
 									<div class="nav__dropDown" id="dropDown">
 										<img src="img/united-kingdom.png" alt="Английский язык">
@@ -70,37 +68,61 @@
 		</div>
 
 		<div class="owl-carousel slider clearfix">
+			
 			<div class="slider__item" style="background-image:url(img/2-layers.png)  ">
-
-				<div class="slider__border-slider">
-					<div class="border-slaider">
-						<p class="border-slider__base">Consumer <br> Products <br> <span>Consulting</span> </p>
-						<p class="border-slider__desc"> <a href="#">LEARN MORE</a> </p>
-					</div>
-				</div>
-
-			</div>
-			<div class="slider__item" style="background-image:url(img/bg-2.png)  ">
-
-				<div class="slider__border-slider">
-					<div class="border-slaider border-slaider--slide-2">
-						<p class="border-slider__base border-slider__base--slide-2">Services & <br> Bussines <br> <span>Consept</span>
+				<div class="container container-slider">
+					<svg  height='420'>
+						<polyline stroke="#fde428" stroke-width="10" fill="none"
+							points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
+						</svg>
+						<svg class="border__line">
+								<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
+						</svg>
+						<p class="border-slider__base">
+							Consumer <br>Products <br>Consulting
 						</p>
-						<p class="border-slider__desc"> <a href="#">LEARN MORE</a> </p>
-					</div>
+						<p class="border-slider__desc">
+							 <a href="#">LEARN MORE</a> 
+						</p>
 				</div>
+							</div>
 
-			</div>
+			<div class="slider__item" style="background-image:url(img/bg-2.png)  ">
+				<div class="container container-slider">
+					<svg  height='420'>
+						<polyline stroke="#fde428" stroke-width="10" fill="none"
+							points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
+						</svg>
+						<svg class="border__line">
+								<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
+						</svg>
+						<p class="border-slider__base">
+							Services & <br>Bussines <br>Consept
+						</p>
+						<p class="border-slider__desc">
+							 <a href="#">LEARN MORE</a> 
+						</p>
+				</div>
+							</div>
+
 			<div class="slider__item" style="background-image:url(img/bg-3.png)  ">
-
-				<div class="slider__border-slider">
-					<div class="border-slaider border-slaider--slide-3">
-						<p class="border-slider__base border-slider__base--slide-3">Working <br> technical <br> <span>capacity</span> </p>
-						<p class="border-slider__desc"> <a href="#">LEARN MORE</a> </p>
-					</div>
+				<div class="container container-slider">
+					<svg  height='420'>
+						<polyline stroke="#fde428" stroke-width="10" fill="none"
+							points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
+						</svg>
+						<svg class="border__line">
+								<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
+						</svg>
+						<p class="border-slider__base">
+							Working <br>technical <br>capacity
+						</p>
+						<p class="border-slider__desc">
+							 <a href="#">LEARN MORE</a> 
+						</p>
 				</div>
-
-			</div>
+							</div>
+							
 		</div>
 
 	</header>
@@ -172,7 +194,7 @@
 			<div class="container">
 				<div class="row-pop__heading">
 					<h2 class="title">
-						Popular Services
+						<a name="service">Popular Services</a>
 					</h2>
 					<p class="content-desc">
 						Rapid solutions to the most complex business challenges <br> with cooperative process-driven.
@@ -282,7 +304,7 @@
 					</div>
 
 					<div class="content">
-						<h2 class="title title--video">Why we best Consulting <br>
+						<h2 class="title title--video"><a name="best">Why</a> we best Consulting <br>
 							office in london ?
 						</h2>
 						<p class="content-desc">Rapid solutions to the most complex business <br> challenges with cooperative
@@ -300,12 +322,13 @@
 
 		<section class="row-slogan">
 			<div class="row-slogan__content">
-				<blockquote class="row-slogan__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit <br>
+				<blockquote class="row-slogan__text"> <a name="testimonials">Lorem </a>ipsum dolor sit amet, consectetur
+					adipisicing elit <br>
 					Seddo eiusmod tempor incididunt ut labore Standard Dummy aliqua. Utenim adminim veniam, quis nostrud <br>
 					exercitation ullamco laboris nisi ut Unknown Printer The Commodo consequat. Duis aute irure dolor. <br>
 					Voluptate velit esse cillum dolore eu fugiat nullapariatur.
 				</blockquote>
-				<a href="" class="row-slogan__link">
+				<a href="#" class="row-slogan__link">
 					<div class="row-slogan__link-wrap">
 						<span>SAM ISBISTER</span>
 					</div>
@@ -317,7 +340,7 @@
 			<div class="container">
 				<div class="row-contact__title ">
 					<div class="title">
-						Contact with us
+						<a name="contact">Contact with us</a>
 					</div>
 					<div class="desc">
 						Rapid solutions to the most complex business challenges <br> with cooperative process-driven.
@@ -330,6 +353,7 @@
 						<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad48c51cd969fc04e51944070153535d26f1d9a1af0384c17810ff01f1c087c8e&amp;width=100%25&amp;height=239&amp;lang=ru_RU&amp;scroll=true"></script>
 					</div>
 				</div>
+
 				<div class="maps-adress ">
 					<div class="maps-adress__item">
 						<h3 class="maps-adress__title">
@@ -346,13 +370,13 @@
 							<li class="maps-adress__list-item">
 								<i class="fa-li fa fa-mobile fa-lg"></i>
 								<p>
-									+445 6231 411
+									<a href="tel: +445 6231 411">+445 6231 411</a>
 								</p>
 							</li>
 							<li class="maps-adress__list-item">
 								<i class="fa-li fa fa-envelope" style="font-size: 0.95rem"></i>
 								<p>
-									+445 6231 411
+									<a href="mailto:la@mail.com">la@mail.com</a>
 								</p>
 							</li>
 						</ul>
@@ -373,13 +397,13 @@
 							<li class="maps-adress__list-item">
 								<i class="fa-li fa fa-mobile fa-lg"></i>
 								<p>
-									+445 6231 411
+									<a href="tel: +445 6231 411">+445 6231 411</a>
 								</p>
 							</li>
 							<li class="maps-adress__list-item">
 								<i class="fa-li fa fa-envelope" style="font-size: 0.95rem"></i>
 								<p>
-									+445 6231 411
+									<a href="mailto:la@mail.com">la@mail.com</a>
 								</p>
 							</li>
 						</ul>
@@ -400,13 +424,13 @@
 							<li class="maps-adress__list-item">
 								<i class="fa-li fa fa-mobile fa-lg"></i>
 								<p>
-									+445 6231 411
+									<a href="tel: +445 6231 411">+445 6231 411</a>
 								</p>
 							</li>
 							<li class="maps-adress__list-item">
 								<i class="fa-li fa fa-envelope" style="font-size: 0.95rem"></i>
 								<p>
-									+445 6231 411
+									<a href="mailto:la@mail.com">la@mail.com</a>
 								</p>
 							</li>
 						</ul>
