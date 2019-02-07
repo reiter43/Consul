@@ -58,7 +58,7 @@ p {
   left: 0;
   margin: 0 auto;
   width: 100%;
-  padding: 0 15px;
+  padding: 0;
   z-index: 100;
   box-sizing: border-box;
   padding-top: 2.1rem;
@@ -117,7 +117,7 @@ p {
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 1.5px solid $fc1;
+    border-bottom: 2px solid $fc1;
   }
 }
 
@@ -135,6 +135,19 @@ p {
   line-height: 3.057;
 }
 
+/*Кнопка-гамбургер*/
+.btn-nav {
+  @include gamburger(30px, 3px, $fcText1, $fc1);
+}
+
+.nav__btn {
+  text-align: right;
+  margin: 1.5rem 2rem 0.5rem 0;
+  display: none;
+}
+
+
+
 /*Выпадающий список выбора языка*/
 .nav__dropDown {
   position: relative;
@@ -142,6 +155,7 @@ p {
   background-repeat: no-repeat;
   background-position: 100% 47%;
   width: 3.3rem;
+  display: block;
 }
 
 .nav__list-dropDown {
@@ -164,6 +178,10 @@ p {
   -webkit-transform: translateY(22%);
 }
 
+.nav__dropDown--responsiv{
+  display: none;
+}
+
 /*Слайдер*/
 .slider__item {
   height: 56rem;
@@ -176,7 +194,7 @@ p {
 
   svg {
     position: absolute;
-    right: 10px;
+    right: 0.625rem;
     top: 17.2rem;
   }
 }
@@ -211,7 +229,9 @@ p {
   a {
     color: $fc1;
     text-decoration: none;
-      &:hover {transition: all ease 2s;
+
+    &:hover {
+      transition: all ease 2s;
       text-decoration: underline;
     }
   }
@@ -273,6 +293,7 @@ p {
 /*Секция стартап*/
 .row-startup-wrap {
   position: relative;
+  padding-bottom: 5.75rem;
 }
 
 .content-wrap {
@@ -280,12 +301,19 @@ p {
   justify-content: space-between;
 }
 
+.content {
+  max-width: 48%;
+}
+
 .row-startup__rectangle {
+  position: absolute;
+  top: 0;
+  right: 7rem;
   width: 16.875rem;
-  height: 32.75rem;
+  height: 52.75rem;
   background-color: $fc1;
   opacity: 0.98;
-  margin-right: 7.0625rem;
+  z-index: -1;
 }
 
 .title {
@@ -328,10 +356,13 @@ p {
 }
 
 .row-startup__img {
-  position: absolute;
-  right: 0;
-  top: 6.0625rem;
-  z-index: 100;
+  max-width: 48%;
+  margin-top: 6.125rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*************************************************************/
@@ -340,6 +371,19 @@ p {
 .row-graph {
   background-color: #f4f4f4;
   padding: 6.4375rem 0;
+}
+
+.row-graph__img {
+  max-width: 48%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.title--graph {
+  margin-top: 1.5rem;
 }
 
 /**************************************************************/
@@ -497,21 +541,20 @@ p {
 
   &__poster {
     position: relative;
-    width: 31.1875rem;
+    width: 48%;
 
     img {
       box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
       opacity: 0.69;
-      @include coverpos;
+      height: 100%;
       display: block;
-      max-width: 100%;
+      width: 100%;
     }
   }
 
   &__fon {
     background-color: #002e5b;
-    max-width: 100%;
-    height: 20.375rem;
+    @include coverpos;
   }
 }
 
@@ -777,6 +820,7 @@ p {
 #email {
   border: none;
   border-bottom: 1px solid $fcText3;
+  outline: none;
 
   &:focus {
     border-bottom: 2px solid $fc2;
@@ -849,4 +893,27 @@ p {
     font-size: 0.9rem;
     font-weight: bold;
   }
+}
+
+/************************************/
+
+/*Фиксация меню*/
+.sticky {
+  position: fixed;
+  background-color: #031c39;
+  z-index: 10000;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+
+/**********************************************/
+
+/*Адаптив*/
+@import '_media.scss';
+
+.hide-2 {
+  display: block;
 }

@@ -56,3 +56,33 @@
     right: -0.2%;
   }
 }
+
+@mixin gamburger ($w, $h, $c, $colorbg) {  //кнопка-гамбургер для меню
+  border: none;
+  background: none;
+  padding: 0.3rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  z-index: 10000;
+
+  &:hover {
+    background: $colorbg;
+  }
+
+  &__line {
+    display: block;
+    width: $w;
+    height: $h;
+    border-radius: 1px;
+    background: $c;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

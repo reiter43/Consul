@@ -26,8 +26,9 @@
 	<header class="header">
 
 		<div class="row__header">
-			<div class="container">
-				<div class="page__header clearfix">
+			<div class="page__header sticky" >
+				<div class="container clearfix">
+					
 					<div class="header__logo">
 						<div class="logo">
 							<p class="logo__title">
@@ -38,9 +39,29 @@
 							</p>
 						</div>
 					</div>
-					<!--  -->
+					
+					<div class="nav__dropDown--responsiv">
+						<div class="nav__dropDown" id="dropDown">
+							<img src="img/united-kingdom.png" alt="Английский язык">
+							<ul class="nav__list-dropDown hide">
+								<li class="nav-item-dropDown"><img src="img/russia.png" class="nav__picture-dropDown" alt="Русский язык"></li>
+								<li class="nav-item-dropDown"><img src="img/united-kingdom.png" class="nav__picture-dropDown" alt="Аглийский язык"></li>
+								<li class="nav-item-dropDown"><img src="img/germany.png" class="nav__picture-dropDown" alt="Немецкий язык"></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="nav__btn">
+								<button class="btn-nav">
+									<span class="btn-nav__line"></span>
+									<span class="btn-nav__line"></span>
+									<span class="btn-nav__line"></span>
+								</button>
+					</div>
+
 					<div class="header__nav">
 						<nav class="nav">
+							
 							<ul class="nav__list clearfix ">
 								<li class="nav__item">
 									<a href="#" class="nav__link nav__link--active">About </a>
@@ -49,7 +70,7 @@
 								<li class="nav__item"><a href="#best" class="nav__link"> Why We Best</a></li>
 								<li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
 								<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-								<li class="nav__item">
+								<li class="nav__item nav__item-responsiv">
 									<div class="nav__dropDown" id="dropDown">
 										<img src="img/united-kingdom.png" alt="Английский язык">
 										<ul class="nav__list-dropDown hide">
@@ -68,66 +89,64 @@
 		</div>
 
 		<div class="owl-carousel slider clearfix">
-			
+
 			<div class="slider__item" style="background-image:url(img/2-layers.png)  ">
 				<div class="container container-slider">
-					<svg  height='420'>
-						<polyline stroke="#fde428" stroke-width="10" fill="none"
-							points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
-						</svg>
-						<svg class="border__line">
-								<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
-						</svg>
-						<p class="border-slider__base">
-							Consumer <br>Products <br>Consulting
-						</p>
-						<p class="border-slider__desc">
-							 <a href="#">LEARN MORE</a> 
-						</p>
+					<svg height='420'>
+						<polyline stroke="#fde428" stroke-width="10" fill="none" points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
+					</svg>
+					<svg class="border__line">
+						<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
+					</svg>
+					<p class="border-slider__base">
+						Consumer <br>Products <br>Consulting
+					</p>
+					<p class="border-slider__desc">
+						<a href="#">LEARN MORE</a>
+					</p>
 				</div>
-							</div>
+			</div>
 
 			<div class="slider__item" style="background-image:url(img/bg-2.png)  ">
 				<div class="container container-slider">
-					<svg  height='420'>
-						<polyline stroke="#fde428" stroke-width="10" fill="none"
-							points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
-						</svg>
-						<svg class="border__line">
-								<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
-						</svg>
-						<p class="border-slider__base">
-							Services & <br>Bussines <br>Consept
-						</p>
-						<p class="border-slider__desc">
-							 <a href="#">LEARN MORE</a> 
-						</p>
+					<svg height='420'>
+						<polyline stroke="#fde428" stroke-width="10" fill="none" points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
+					</svg>
+					<svg class="border__line">
+						<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
+					</svg>
+					<p class="border-slider__base">
+						Services & <br>Bussines <br>Consept
+					</p>
+					<p class="border-slider__desc">
+						<a href="#">LEARN MORE</a>
+					</p>
 				</div>
-							</div>
+			</div>
 
 			<div class="slider__item" style="background-image:url(img/bg-3.png)  ">
 				<div class="container container-slider">
-					<svg  height='420'>
-						<polyline stroke="#fde428" stroke-width="10" fill="none"
-							points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
-						</svg>
-						<svg class="border__line">
-								<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
-						</svg>
-						<p class="border-slider__base">
-							Working <br>technical <br>capacity
-						</p>
-						<p class="border-slider__desc">
-							 <a href="#">LEARN MORE</a> 
-						</p>
+					<svg height='420'>
+						<polyline stroke="#fde428" stroke-width="10" fill="none" points=" 10,100 10,40 290,40 290,415 10,415 10,360 " />
+					</svg>
+					<svg class="border__line">
+						<line x1="10" y1="255" x2="10" y2="315" style="stroke: #fde428; stroke-width: 10px;" />
+					</svg>
+					<p class="border-slider__base">
+						Working <br>technical <br>capacity
+					</p>
+					<p class="border-slider__desc">
+						<a href="#">LEARN MORE</a>
+					</p>
 				</div>
-							</div>
-							
+			</div>
+
 		</div>
 
 	</header>
 
 	<main class="main">
+
 		<section class="row-startup">
 			<div class="container">
 				<div class="row-startup-wrap">
@@ -142,14 +161,16 @@
 								sapien, <br> tempus </p>
 							<a href="#" class="content-link">Take a Tour</a>
 						</div>
-						<div class="row-startup__rectangle">
-						</div>
-					</div>
-					<div class="row-startup__img">
+					
+						<div class="row-startup__img">
 						<img src="img/startup-594090_1920.png" alt="">
 					</div>
+					</div>
+						<div class="row-startup__rectangle">
+						</div>
 				</div>
 			</div>
+		</div>
 		</section>
 
 		<section class="row-graph">
@@ -159,7 +180,7 @@
 						<img src="img/graph.png" alt="">
 					</div>
 					<div class="content">
-						<h2 class="title">Constructingthe best in <br> class global assets.</h2>
+						<h2 class="title title--graph">Constructingthe best in <br> class global assets.</h2>
 						<p class="content-desc">Rapid solutions to the most complex business <br> challenges with cooperative
 							process-driven.</p>
 						<p class="content-text">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, <br>
@@ -303,7 +324,7 @@
 
 					</div>
 
-					<div class="content">
+					<div class="content content--video">
 						<h2 class="title title--video"><a name="best">Why</a> we best Consulting <br>
 							office in london ?
 						</h2>
@@ -504,7 +525,7 @@
 	<script src="js/modal_message.js"></script>
 	<script src="js/form.js"></script>
 	<script src="js/chips.js"></script>
-
+	
 </body>
 
 
